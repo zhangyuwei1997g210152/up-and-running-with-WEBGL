@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>WebGL: Lesson 1</title>
+    <title>WebGL: Canvas Context</title>
+    <style>
+        canvas {
+            width: 640px;
+            height: 480px;
+            display: block;
+        }
+</style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script type="text/javascript">
+      const canvas = document.querySelector("#c");
+      const gl = canvas.getContext('webgl');
+    </script>
+    <script id="vertex-data" type="not-javascript">
+    </script>
+        <script id="fragment-data" type="not-javascript">
+        </script>
+      <script id="vertex-source" type="not-javascript">
+        attribute vec4 vertex_points;
+        void main() {
+            gl_Position = vertex_points;
+} </script>
+<script id="fragment-source" type="not-javascript">
+    precision mediump float;
+    void main() {
+        gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+} </script>
+
+</script>
+</body>
+</html>
